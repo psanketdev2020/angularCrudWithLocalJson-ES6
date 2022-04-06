@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "name": "Sanket",
+      "technology": "angular",
+      "id": 4
+    },
+    {
+      "name": "Rutuja",
+      "technology": "html",
+      "id": 5
+    },
+    {
+      "name": "Mohammad ",
+      "technology": ".net",
+      "id": 7
+    },
+    {
+      "name": "sanket mane",
+      "technology": "ui",
+      "id": 8
+    },
+    {
+      "name": "kumar joshi",
+      "technology": "java",
+      "id": 10
+    },
+    {
+      "name": "mohini",
+      "technology": "javascript, angular, react",
+      "id": 11
+    }
+  ]
+}

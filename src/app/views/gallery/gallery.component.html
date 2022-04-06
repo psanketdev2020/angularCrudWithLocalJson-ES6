@@ -1,0 +1,40 @@
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://via.placeholder.com/80x50" alt="">
+        <div class="card-body">
+          <h5>Gallery 1</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores rem libero consequuntur fuga autem tenetur! Veritatis saepe soluta sapiente.</p>
+          <button class="btn btn-info" [routerLink]="['gallery1']">know More</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+       <div class="card">
+         <img src="https://via.placeholder.com/80x50" alt="">
+        <div class="card-body">
+          <h5>Gallery 2</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores rem libero consequuntur fuga autem tenetur! Veritatis saepe soluta sapiente.</p>
+          <button class="btn btn-info" [routerLink]="['gallery2']">know More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="gallery mt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 mb-3" *ngFor="let item of galleryItem">
+        <a href="javascript:void(0);" routerLink="{{item.id}}" >
+          <div class="card p-0">
+            <img src="{{ item.imgUrl }}" alt="{{ item.imgUrl }}" />
+            <div class="card-body p-2">
+              <h4 class="font-weight-medium color-dark text-center">{{ item.title }}</h4>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
